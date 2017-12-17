@@ -1,5 +1,4 @@
-before_install:
-  true
-
-install:
-  true
+language: node_js
+node_js:
+  - "iojs"
+  - "7"
