@@ -1,0 +1,26 @@
+{
+  "name": "wit-style.ru",
+  "version": "1.0.0",
+  "description": "Personal site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WeeManMSK/wit-style.ru.git"
+  },
+  "keywords": [
+    "personal",
+    "site"
+  ],
+  "author": "Anton Ternovykh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WeeManMSK/wit-style.ru/issues"
+  },
+  "homepage": "https://github.com/WeeManMSK/wit-style.ru#readme",
+  "dependencies": {
+    "@angular/core": "^5.1.1"
+  }
+}
