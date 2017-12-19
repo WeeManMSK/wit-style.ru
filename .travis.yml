@@ -23,6 +23,6 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: ssh weeman@92.53.114.27 ls -l /some/directory
+  script: ssh weeman@92.53.114.27 ls -l /home
   on:
     branch: master
