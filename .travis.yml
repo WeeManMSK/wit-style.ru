@@ -11,10 +11,13 @@ before_script:
 - sleep 3
 before_install:
 - openssl aes-256-cbc -K $encrypted_d76fa800597d_key -iv $encrypted_d76fa800597d_iv
-  -in deploy-key.enc -out deploy-key -d
+  -in deploy-key.enc -out /tmp/deploy-key -d
+- eval "$(ssh-agent -s)"
+- chmod 600 /tmp/deploy-key
+- ssh-add /tmp/deploy-key
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet ssh $TRAVIS_BUILD_DIR/dist weeman@92.53.114.27:/wit-style.ru/public_html
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/dist weeman@92.53.114.27:/wit-style.ru/public_html
   on:
     branch: master
