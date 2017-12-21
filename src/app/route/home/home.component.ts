@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 
 @Component({
-    selector: "plum-home",
+    selector: "app-home",
     template: require("./home.component.pug"),
     styleUrls: [ "./home.component.scss" ]
 })

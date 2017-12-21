@@ -5,6 +5,8 @@ import { FormsModule } from "@angular/forms";
 import { HttpModule } from "@angular/http";
 import { RouteModule } from "./route/route.module";
 
+import { ComponentModule } from "./components";
+
 import { ROUTING } from "./app.routing";
 
 
@@ -14,10 +16,11 @@ import { ROUTING } from "./app.routing";
         FormsModule,
         HttpModule,
         RouteModule,
+        ComponentModule,
         ROUTING
     ],
     declarations: [
-        AppComponent,
+        AppComponent
     ],
     bootstrap: [
         AppComponent

@@ -1,10 +1,11 @@
 import { NgModule } from "@angular/core";
-import { HomeComponent } from "./index";
+import { HomeComponent, NotesComponent } from "./index";
 
 @NgModule({
     imports: [ ],
     declarations: [
         HomeComponent,
+        NotesComponent
     ],
     bootstrap: [
     ]
