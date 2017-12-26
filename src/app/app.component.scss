@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.app {
+    display: flex;
+    flex-flow: row wrap; 
+    min-height: calc(100vh - 100px);
+    &>* {
+        flex: 1 100%;
+    }
+    main {
+        width: 100%;
+        order: 2;
+        flex: 3 0px;
+    }
+}

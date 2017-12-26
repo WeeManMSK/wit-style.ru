@@ -1,3 +1,9 @@
-.sidebar-item {
-    color: red;
+.sidebar {
+    flex-flow: column wrap;
+    background: red;
+    order: 1;
+    flex: 0 250px;
+    .sidebar-item {
+        
+    }
 }

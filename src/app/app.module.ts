@@ -1,29 +1,32 @@
-import { NgModule } from "@angular/core";
-import { AppComponent } from "./app.component";
-import { BrowserModule } from "@angular/platform-browser";
-import { FormsModule } from "@angular/forms";
-import { HttpModule } from "@angular/http";
-import { RouteModule } from "./route/route.module";
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
-import { ComponentModule } from "./components";
+/* App Root */
+import { AppComponent } from './app.component';
 
-import { ROUTING } from "./app.routing";
+/* Feature Modules */
+import { SharedModule } from './shared/shared.module';
+
+import { routing } from './app.routing';
+import { SidebarComponent, FooterComponent } from './components/index';
+import { HomeComponent, NotesComponent } from './route/index';
 
 
 @NgModule({
     imports: [
         BrowserModule,
-        FormsModule,
-        HttpModule,
-        RouteModule,
-        ComponentModule,
-        ROUTING
+        routing,
+        SharedModule.forRoot()
     ],
     declarations: [
-        AppComponent
+        AppComponent,
+        HomeComponent,
+        NotesComponent,
+        SidebarComponent,
+        FooterComponent
     ],
     bootstrap: [
         AppComponent
     ]
 })
-export class AppModule {}
+export class AppModule { }
