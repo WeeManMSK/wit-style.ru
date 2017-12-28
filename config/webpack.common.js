@@ -8,7 +8,7 @@ module.exports = {
         "polyfills": "./src/polyfills.ts",
         "vendor": "./src/vendor.ts",
         "app": "./src/main.ts",
-        "style": "./src/style.scss"
+        "style": "./src/style.css"
     },
 
     resolve: {
@@ -43,7 +43,7 @@ module.exports = {
             {
                 test: /\.css$/,
                 exclude: helpers.root("src", "app"),
-                use: ExtractTextPlugin.extract({ fallbackLoader: "style-loader", loader: "css-loader?sourceMap" })
+                use: ExtractTextPlugin.extract({ fallbackLoader: "style-loader", loader: "css-loader" })
             },
             {
                 test: /\.css$/,
