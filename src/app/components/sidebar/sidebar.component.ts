@@ -1,14 +1,9 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-    selector: 'app-sidebar',
+    selector: 'wit-sidebar',
     styleUrls: ['sidebar.component.scss'],
-    templateUrl: 'sidebar.component.html',
-    host: {
-        'class': 'sidebar',
-    },
-    encapsulation: ViewEncapsulation.None,
-    preserveWhitespaces: false
+    templateUrl: 'sidebar.component.html'
 })
 
 export class SidebarComponent implements OnInit {

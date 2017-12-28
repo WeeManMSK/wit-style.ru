@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'notes',
+    selector: 'wit-notes',
     templateUrl: 'notes.component.html',
     styleUrls: [ "./notes.component.scss" ]
 })

@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 
 import { routing } from './app.routing';
-import { SidebarComponent, FooterComponent } from './components/index';
+import { SidebarComponent, FooterComponent, HeaderComponent } from './components/index';
 import { HomeComponent, NotesComponent } from './route/index';
 
 
@@ -23,7 +23,8 @@ import { HomeComponent, NotesComponent } from './route/index';
         HomeComponent,
         NotesComponent,
         SidebarComponent,
-        FooterComponent
+        FooterComponent,
+        HeaderComponent
     ],
     bootstrap: [
         AppComponent
