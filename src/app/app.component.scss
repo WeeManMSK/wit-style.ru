@@ -2,22 +2,33 @@
     box-sizing: border-box;
 }
 
-html,
-body {
+html {
     height: 100%;
-    margin: 0;
 }
 
-.app {
+body {
+    // height: 100%;
+    // margin: 0;
+    height: 100vh;
+}
+
+:host {
+    // display: flex;
+    // flex-flow: row wrap; 
+    // min-height: calc(100vh - 100px);
+    // &>* {
+    //     flex: 1 100%;
+    // }
+    // main {
+    //     width: 100%;
+    //     order: 2;
+    //     flex: 3 0px;
+    // }
     display: flex;
-    flex-flow: row wrap; 
-    min-height: calc(100vh - 100px);
-    &>* {
-        flex: 1 100%;
-    }
-    main {
-        width: 100%;
-        order: 2;
-        flex: 3 0px;
+    height: 100%;
+    flex-direction: column;
+    .main {
+        margin-top: var(--space); // flex: 1 0 auto;
+        // order: 1;
     }
 }
