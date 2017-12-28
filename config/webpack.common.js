@@ -8,12 +8,12 @@ module.exports = {
         "polyfills": "./src/polyfills.ts",
         "vendor": "./src/vendor.ts",
         "app": "./src/main.ts",
-        "style": "./src/style.css"
+        "style": "./src/style.scss"
     },
 
     resolve: {
         extensions: [
-            ".js", ".ts", ".css"
+            ".js", ".ts"
         ]
     },
 
@@ -47,7 +47,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                include: helpers.root("src", "app", "app/shared"),
+                include: helpers.root("src", "app"),
                 use: "raw-loader"
             }
         ]
