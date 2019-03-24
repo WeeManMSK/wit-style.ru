@@ -2,3 +2,8 @@ node_modules
 package-lock.json
 .idea/
 dist/
+bin
+obj
+.vs
+.vscode
+*.user
