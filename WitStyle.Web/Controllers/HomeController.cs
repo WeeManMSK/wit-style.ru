@@ -4,6 +4,7 @@ using WitStyle.Web.Models;
 
 namespace WitStyle.Web.Controllers
 {
+
     public class HomeController : Controller
     {
         public IActionResult Index()
