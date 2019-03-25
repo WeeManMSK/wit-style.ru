@@ -5,6 +5,7 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <RootNamespace>WitStyle.Web</RootNamespace>
     <AssemblyName>WitStyle.Web</AssemblyName>
+    <UserSecretsId>1b224d4c-1e64-4483-a2f8-23d216ac6670</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
