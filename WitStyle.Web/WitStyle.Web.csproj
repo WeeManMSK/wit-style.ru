@@ -17,9 +17,17 @@
 
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\WitStyle.Common\WitStyle.Common.csproj" />
+    <ProjectReference Include="..\WitStyle.Data\WitStyle.Data.csproj" />
+    <ProjectReference Include="..\WitStyle.Services\WitStyle.Services.csproj" />
   </ItemGroup>
 
 </Project>

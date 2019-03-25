@@ -1,4 +1,4 @@
-@model List<MenuItem>
+@model MenuItemDto[]
 
 <aside>
     @await Component.InvokeAsync(nameof(Logo))
@@ -6,7 +6,7 @@
         @foreach (var item in Model)
         {
             <li class="sidebar-menu-item">
-                <a asp-area="" asp-controller="@item.Controller" asp-action="@item.Action">@item.DisplayName</a>
+                <a asp-area="" asp-controller="@item.ControllerName" asp-action="@item.ActionName">@item.DisplayName</a>
             </li>
         }
     </ul>
