@@ -1,4 +1,4 @@
 # wit-style.ru
-<img src="https://travis-ci.org/WeeManMSK/wit-style.ru.svg?branch=master">
+[![Build status](https://ci.appveyor.com/api/projects/status/2y9p1anh41gqj1ft?svg=true)](https://ci.appveyor.com/project/anton-ternovykh/wit-style-ru)
 
 Personal site

@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
+using System;
 using WitStyle.Common;
 
 namespace WitStyle.Web
@@ -12,6 +13,9 @@ namespace WitStyle.Web
             _configuration = configuration;
         }
 
-        public string WitStyleConnectionString { get => _configuration.GetConnectionString("WitStyleConnectionString"); }
+        public string WitStyleConnectionString { get => GetCOnnectionString("WitStyleConnectionString"); }
+
+        private string GetCOnnectionString(string name) =>
+            Environment.GetEnvironmentVariable($"ConnectionStrings:{name}") ?? _configuration.GetConnectionString(name);
     }
 }
